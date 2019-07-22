@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   self.view.backgroundColor = [UIColor whiteColor];
+   UILabel * someIntroduct = [[UILabel alloc]initWithFrame:CGRectMake(Width_Screen/2-100, 30+Height_Nav, 200, 50)];
+   someIntroduct.textAlignment = NSTextAlignmentCenter;
+   someIntroduct.font = [UIFont systemFontOfSize:13];
+   someIntroduct.numberOfLines = 0;
+   someIntroduct.adjustsFontSizeToFitWidth = YES;
+   someIntroduct.textColor = [UIColor darkTextColor];
+   someIntroduct.text = @"";
+   [self.view addSubview:someIntroduct];
 }
 
 /*
