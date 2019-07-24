@@ -1,0 +1,6 @@
+framework module XUC {
+  umbrella header "XUC.h"
+
+  export *
+  module * { export * }
+}

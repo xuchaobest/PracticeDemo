@@ -64,6 +64,9 @@
       case 2:
          return @"关于传值";
          break;
+      case 3:
+         return @"使用动态库";
+         break;
       default:
          return @"";
          break;

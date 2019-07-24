@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1320F4EE22E8941300865F13 /* XUC.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1320F4ED22E8941300865F13 /* XUC.framework */; };
+		1320F4EF22E894B500865F13 /* XUC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1320F4ED22E8941300865F13 /* XUC.framework */; };
+		1320F4F022E894B500865F13 /* XUC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1320F4ED22E8941300865F13 /* XUC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1320F4F422E894E500865F13 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1320F4F322E894E500865F13 /* ViewController3.m */; };
 		13BB1E3B22A6CB8F00FE2CB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1E3A22A6CB8F00FE2CB7 /* AppDelegate.m */; };
 		13BB1E3E22A6CB8F00FE2CB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1E3D22A6CB8F00FE2CB7 /* ViewController.m */; };
 		13BB1E4122A6CB8F00FE2CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB1E3F22A6CB8F00FE2CB7 /* Main.storyboard */; };
@@ -20,7 +24,24 @@
 		13F930C222E42331008DA76D /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F930C122E42331008DA76D /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1320F4F122E894B500865F13 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1320F4F022E894B500865F13 /* XUC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1320F4ED22E8941300865F13 /* XUC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XUC.framework; sourceTree = "<group>"; };
+		1320F4F222E894E500865F13 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		1320F4F322E894E500865F13 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 		13BB1E3622A6CB8F00FE2CB7 /* practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BB1E3922A6CB8F00FE2CB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13BB1E3A22A6CB8F00FE2CB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1320F4EF22E894B500865F13 /* XUC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +80,7 @@
 		13BB1E2D22A6CB8F00FE2CB7 = {
 			isa = PBXGroup;
 			children = (
+				1320F4ED22E8941300865F13 /* XUC.framework */,
 				13E3BFEF22E2C57600D15F16 /* BasicFiles */,
 				13BB1E3822A6CB8F00FE2CB7 /* Practice */,
 				13E3BFF322E31E1600D15F16 /* Views */,
@@ -87,6 +110,8 @@
 				13E7924522DE25B1003EEDDC /* ViewController1.m */,
 				13F930C022E42330008DA76D /* ViewController2.h */,
 				13F930C122E42331008DA76D /* ViewController2.m */,
+				1320F4F222E894E500865F13 /* ViewController3.h */,
+				1320F4F322E894E500865F13 /* ViewController3.m */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -124,6 +149,7 @@
 				13BB1E3222A6CB8F00FE2CB7 /* Sources */,
 				13BB1E3322A6CB8F00FE2CB7 /* Frameworks */,
 				13BB1E3422A6CB8F00FE2CB7 /* Resources */,
+				1320F4F122E894B500865F13 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1320F4EE22E8941300865F13 /* XUC.framework in Resources */,
 				13BB1E4622A6CB9400FE2CB7 /* LaunchScreen.storyboard in Resources */,
 				13BB1E4322A6CB9400FE2CB7 /* Assets.xcassets in Resources */,
 				13BB1E4122A6CB8F00FE2CB7 /* Main.storyboard in Resources */,
@@ -186,6 +213,7 @@
 			files = (
 				13E3BFF622E31E5700D15F16 /* ViewControllerCell.m in Sources */,
 				13E7924622DE25B1003EEDDC /* ViewController1.m in Sources */,
+				1320F4F422E894E500865F13 /* ViewController3.m in Sources */,
 				13BB1E3E22A6CB8F00FE2CB7 /* ViewController.m in Sources */,
 				13E3C00422E388B900D15F16 /* UIView+Layout.m in Sources */,
 				13BB1E4922A6CB9400FE2CB7 /* main.m in Sources */,
@@ -336,6 +364,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBDJ83Z5HX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BasicFiles/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
@@ -358,6 +390,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBDJ83Z5HX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BasicFiles/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
