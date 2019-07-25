@@ -41,7 +41,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    ViewControllerCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseIdentifer];
    cell.topic.backgroundColor = [UIColor colorWithRed:random()%255/255.0 green:random()%255/255.0 blue:random()%255/255.0 alpha:1];
-   cell.topic.text = [self topicOfDemo:indexPath.row];
+//   cell.topic.text = [self topicOfDemo:indexPath.row];
+   NSShadow *shadow = [NSShadow new];
+   shadow.shadowBlurRadius = 6;
+   shadow.shadowOffset = CGSizeMake(0.5, 0.5);
+   shadow.shadowColor = [UIColor whiteColor];
+   NSAttributedString *attstr = [[NSAttributedString alloc]initWithString:[self topicOfDemo:indexPath.row] attributes:@{NSShadowAttributeName:shadow}];
+   cell.topic.attributedText = attstr;
    return cell;
 }
 

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "FPSObserver.h"
 @interface AppDelegate ()
 
 @end
@@ -23,6 +24,7 @@
    navi.viewControllers = @[vc];
    _window.rootViewController = navi;
    [_window makeKeyAndVisible];
+   [FPSObserver showOnView:[[application windows] firstObject].rootViewController.view];
    return YES;
 }
 

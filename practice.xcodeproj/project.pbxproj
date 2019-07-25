@@ -17,6 +17,7 @@
 		13BB1E4322A6CB9400FE2CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BB1E4222A6CB9400FE2CB7 /* Assets.xcassets */; };
 		13BB1E4622A6CB9400FE2CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB1E4422A6CB9400FE2CB7 /* LaunchScreen.storyboard */; };
 		13BB1E4922A6CB9400FE2CB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1E4822A6CB9400FE2CB7 /* main.m */; };
+		13D4D27722E8A2D8006355B2 /* FPSObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D4D27622E8A2D8006355B2 /* FPSObserver.m */; };
 		13E3BFF222E2C5E600D15F16 /* ViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E3BFF122E2C5E600D15F16 /* ViewController0.m */; };
 		13E3BFF622E31E5700D15F16 /* ViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E3BFF522E31E5700D15F16 /* ViewControllerCell.m */; };
 		13E3C00422E388B900D15F16 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E3C00322E388B900D15F16 /* UIView+Layout.m */; };
@@ -52,6 +53,8 @@
 		13BB1E4522A6CB9400FE2CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13BB1E4722A6CB9400FE2CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13BB1E4822A6CB9400FE2CB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13D4D27522E8A2D8006355B2 /* FPSObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPSObserver.h; sourceTree = "<group>"; };
+		13D4D27622E8A2D8006355B2 /* FPSObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPSObserver.m; sourceTree = "<group>"; };
 		13E3BFF022E2C5E600D15F16 /* ViewController0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController0.h; sourceTree = "<group>"; };
 		13E3BFF122E2C5E600D15F16 /* ViewController0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController0.m; sourceTree = "<group>"; };
 		13E3BFF422E31E5700D15F16 /* ViewControllerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerCell.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 			children = (
 				13E3BFF422E31E5700D15F16 /* ViewControllerCell.h */,
 				13E3BFF522E31E5700D15F16 /* ViewControllerCell.m */,
+				13D4D27522E8A2D8006355B2 /* FPSObserver.h */,
+				13D4D27622E8A2D8006355B2 /* FPSObserver.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				13E3C00422E388B900D15F16 /* UIView+Layout.m in Sources */,
 				13BB1E4922A6CB9400FE2CB7 /* main.m in Sources */,
 				13F930C222E42331008DA76D /* ViewController2.m in Sources */,
+				13D4D27722E8A2D8006355B2 /* FPSObserver.m in Sources */,
 				13E3BFF222E2C5E600D15F16 /* ViewController0.m in Sources */,
 				13BB1E3B22A6CB8F00FE2CB7 /* AppDelegate.m in Sources */,
 			);
