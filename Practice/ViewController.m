@@ -73,6 +73,9 @@
       case 3:
          return @"使用动态库";
          break;
+      case 4:
+         return @"数学模型";
+         break;
       default:
          return @"";
          break;
