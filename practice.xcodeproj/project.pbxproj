@@ -28,6 +28,7 @@
 		13E3C00422E388B900D15F16 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E3C00322E388B900D15F16 /* UIView+Layout.m */; };
 		13E7924622DE25B1003EEDDC /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E7924522DE25B1003EEDDC /* ViewController1.m */; };
 		13F930C222E42331008DA76D /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F930C122E42331008DA76D /* ViewController2.m */; };
+		9C2CEAAA22EEE7640096C8E0 /* Note.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CEAA922EEE7640096C8E0 /* Note.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		13E7924522DE25B1003EEDDC /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		13F930C022E42330008DA76D /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		13F930C122E42331008DA76D /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		9C2CEAA922EEE7640096C8E0 /* Note.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Note.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				13E3BFEF22E2C57600D15F16 /* BasicFiles */,
 				13BB1E3822A6CB8F00FE2CB7 /* Practice */,
 				13E3BFF322E31E1600D15F16 /* Views */,
+				9C2CEAA822EEE71A0096C8E0 /* Files */,
 				1335990822EC71D300D509DF /* practiceTests */,
 				1335991622EC721B00D509DF /* practiceUITests */,
 				13BB1E3722A6CB8F00FE2CB7 /* Products */,
@@ -240,6 +243,14 @@
 				133598B722EC0E5900D509DF /* Controllers */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9C2CEAA822EEE71A0096C8E0 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C2CEAA922EEE7640096C8E0 /* Note.rtf */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +373,7 @@
 			files = (
 				1320F4EE22E8941300865F13 /* XUC.framework in Resources */,
 				13BB1E4622A6CB9400FE2CB7 /* LaunchScreen.storyboard in Resources */,
+				9C2CEAAA22EEE7640096C8E0 /* Note.rtf in Resources */,
 				133598BE22EC155200D509DF /* VC4TableCell.xib in Resources */,
 				13BB1E4322A6CB9400FE2CB7 /* Assets.xcassets in Resources */,
 				13BB1E4122A6CB8F00FE2CB7 /* Main.storyboard in Resources */,
