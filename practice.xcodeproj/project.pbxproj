@@ -29,6 +29,7 @@
 		13E7924622DE25B1003EEDDC /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E7924522DE25B1003EEDDC /* ViewController1.m */; };
 		13F930C222E42331008DA76D /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F930C122E42331008DA76D /* ViewController2.m */; };
 		9C2CEAAA22EEE7640096C8E0 /* Note.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CEAA922EEE7640096C8E0 /* Note.rtf */; };
+		9C4A6FD622EFD636008B7344 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A6FD522EFD636008B7344 /* ViewController5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		13F930C022E42330008DA76D /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		13F930C122E42331008DA76D /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		9C2CEAA922EEE7640096C8E0 /* Note.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Note.rtf; sourceTree = "<group>"; };
+		9C4A6FD422EFD636008B7344 /* ViewController5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController5.h; sourceTree = "<group>"; };
+		9C4A6FD522EFD636008B7344 /* ViewController5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController5.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				1320F4F322E894E500865F13 /* ViewController3.m */,
 				133598B422EC0D8100D509DF /* ViewController4.h */,
 				133598B522EC0D8100D509DF /* ViewController4.m */,
+				9C4A6FD422EFD636008B7344 /* ViewController5.h */,
+				9C4A6FD522EFD636008B7344 /* ViewController5.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				13BB1E4922A6CB9400FE2CB7 /* main.m in Sources */,
 				133598BD22EC155200D509DF /* VC4TableCell.m in Sources */,
 				133598B622EC0D8100D509DF /* ViewController4.m in Sources */,
+				9C4A6FD622EFD636008B7344 /* ViewController5.m in Sources */,
 				13F930C222E42331008DA76D /* ViewController2.m in Sources */,
 				13D4D27722E8A2D8006355B2 /* FPSObserver.m in Sources */,
 				13E3BFF222E2C5E600D15F16 /* ViewController0.m in Sources */,
