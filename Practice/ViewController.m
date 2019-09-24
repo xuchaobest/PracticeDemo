@@ -79,6 +79,9 @@
        case 5:
            return @"笔记";
            break;
+      case 6:
+         return @"一个计时方法的demo";
+         break;
       default:
          return @"";
          break;

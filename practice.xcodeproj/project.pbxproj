@@ -11,6 +11,8 @@
 		1320F4EF22E894B500865F13 /* XUC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1320F4ED22E8941300865F13 /* XUC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1320F4F022E894B500865F13 /* XUC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1320F4ED22E8941300865F13 /* XUC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1320F4F422E894E500865F13 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1320F4F322E894E500865F13 /* ViewController3.m */; };
+		132FB7292339970B00A19228 /* ViewController6.m in Sources */ = {isa = PBXBuildFile; fileRef = 132FB7272339970B00A19228 /* ViewController6.m */; };
+		132FB72A2339970B00A19228 /* ViewController6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132FB7282339970B00A19228 /* ViewController6.xib */; };
 		133598B622EC0D8100D509DF /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 133598B522EC0D8100D509DF /* ViewController4.m */; };
 		133598BD22EC155200D509DF /* VC4TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 133598BB22EC155200D509DF /* VC4TableCell.m */; };
 		133598BE22EC155200D509DF /* VC4TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133598BC22EC155200D509DF /* VC4TableCell.xib */; };
@@ -67,6 +69,9 @@
 		1320F4ED22E8941300865F13 /* XUC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XUC.framework; sourceTree = "<group>"; };
 		1320F4F222E894E500865F13 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
 		1320F4F322E894E500865F13 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		132FB7262339970B00A19228 /* ViewController6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController6.h; sourceTree = "<group>"; };
+		132FB7272339970B00A19228 /* ViewController6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController6.m; sourceTree = "<group>"; };
+		132FB7282339970B00A19228 /* ViewController6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController6.xib; sourceTree = "<group>"; };
 		133598B422EC0D8100D509DF /* ViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
 		133598B522EC0D8100D509DF /* ViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
 		133598BA22EC155200D509DF /* VC4TableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VC4TableCell.h; sourceTree = "<group>"; };
@@ -147,6 +152,9 @@
 				133598B522EC0D8100D509DF /* ViewController4.m */,
 				9C4A6FD422EFD636008B7344 /* ViewController5.h */,
 				9C4A6FD522EFD636008B7344 /* ViewController5.m */,
+				132FB7262339970B00A19228 /* ViewController6.h */,
+				132FB7272339970B00A19228 /* ViewController6.m */,
+				132FB7282339970B00A19228 /* ViewController6.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -378,6 +386,7 @@
 			files = (
 				1320F4EE22E8941300865F13 /* XUC.framework in Resources */,
 				13BB1E4622A6CB9400FE2CB7 /* LaunchScreen.storyboard in Resources */,
+				132FB72A2339970B00A19228 /* ViewController6.xib in Resources */,
 				9C2CEAAA22EEE7640096C8E0 /* Note.rtf in Resources */,
 				133598BE22EC155200D509DF /* VC4TableCell.xib in Resources */,
 				13BB1E4322A6CB9400FE2CB7 /* Assets.xcassets in Resources */,
@@ -411,6 +420,7 @@
 				13E3BFF622E31E5700D15F16 /* ViewControllerCell.m in Sources */,
 				13E7924622DE25B1003EEDDC /* ViewController1.m in Sources */,
 				1320F4F422E894E500865F13 /* ViewController3.m in Sources */,
+				132FB7292339970B00A19228 /* ViewController6.m in Sources */,
 				13BB1E3E22A6CB8F00FE2CB7 /* ViewController.m in Sources */,
 				13E3C00422E388B900D15F16 /* UIView+Layout.m in Sources */,
 				13BB1E4922A6CB9400FE2CB7 /* main.m in Sources */,
