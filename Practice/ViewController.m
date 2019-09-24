@@ -103,12 +103,12 @@
 
 + (BOOL)resolveInstanceMethod:(SEL)sel{
    NSLog(@"%p",sel);
-   /*if (sel == @selector(meserror)) {
+   if (sel == @selector(meserror)) {
       Method newFunc = class_getInstanceMethod([self class], @selector(msgForwardInvocation));
       const char * desStr = method_getTypeEncoding(newFunc);
       class_addMethod([self class], sel, (IMP)oneMethodIsInvalid, desStr);
       return YES;
-   }*/
+   }
    return  [super resolveInstanceMethod:sel];
 }
 
