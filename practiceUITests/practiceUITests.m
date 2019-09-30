@@ -34,6 +34,18 @@
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
    
+   
+   XCUIApplication *app = [[XCUIApplication alloc] init];
+   [app.tables.staticTexts[@"一个计时方法的demo"] tap];
+   
+   XCUIElement *textField = [[[[[app.otherElements containingType:XCUIElementTypeNavigationBar identifier:@"View"] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeTextField].element;
+   [textField tap];
+   [textField tap];
+   [app.buttons[@"开始"] tap];
+   
+   
+   
+   
 }
 
 @end

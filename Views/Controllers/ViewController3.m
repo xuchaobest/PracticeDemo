@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.view.backgroundColor = [UIColor whiteColor];
-   XuCView *xuc = [[XuCView alloc]initWithFrame:CGRectMake(0, Height_Nav, Width_Screen, 200)];
-   [self.view addSubview:xuc];
+//   XuCView *xuc = [[XuCView alloc]initWithFrame:CGRectMake(0, Height_Nav, Width_Screen, 200)];
+//   [self.view addSubview:xuc];
 }
 
 @end

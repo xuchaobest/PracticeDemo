@@ -7,9 +7,10 @@
 //
 
 #import "ViewController5.h"
+#import <objc/runtime.h>
 
 @interface ViewController5 ()
-
+@property(nonatomic,weak)UIView *view2;
 @end
 
 @implementation ViewController5
@@ -18,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
    [self convertStringBetweenOCAndC];
+   [self aboutCategoryCreatedBySystem];
 }
 
 -(void)convertStringBetweenOCAndC{
@@ -59,4 +61,25 @@
     
 }
 
+-(void)aboutCategoryCreatedBySystem{
+   UIView *view = [UIView new];
+   [view addObserver:self forKeyPath:@"backgroundColor" options:NSKeyValueObservingOptionInitial context:nil];
+   UIView *view1 = [UIView new];
+   NSLog(@"%@",[view class]);
+   NSLog(@"%@",object_getClass(view));
+   NSLog(@"%@",[view1 class]);
+   NSLog(@"%@",object_getClass(view1));
+   _view2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 90, 90)];
+   NSLog(@"%@",[_view2 class]);
+   NSLog(@"%@",object_getClass(_view2));
+   [self.view addSubview:_view2];
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+   
+}
+
+-(void)dealloc{
+   
+}
 @end

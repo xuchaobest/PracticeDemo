@@ -150,7 +150,19 @@ extern NSString *const cellReuseIdentifer;
       UIView * view1 = [self.view viewWithTag:3];
       [view1.layer addAnimation:_group forKey:@""];
    }
-   [self.view sendSubviewToBack:view];
+//   [self.view sendSubviewToBack:view];
+   CGRect boundingRect = CGRectMake(0, 0, 30, 30);
+   CAKeyframeAnimation *orbit = [CAKeyframeAnimation animation];
+   orbit.keyPath = @"position";
+   orbit.path = CFAutorelease(CGPathCreateWithEllipseInRect(boundingRect, NULL));
+   orbit.duration = 4;
+   orbit.additive = YES;
+   orbit.repeatCount = HUGE_VALF;
+   orbit.calculationMode = kCAAnimationPaced;
+//   orbit.rotationMode = kCAAnimationRotateAuto;
+   [self.view.layer addAnimation:orbit forKey:@"orbit"];
+
+   
 //   CAAnimationGroup *group = [view.layer animationForKey:@"shuffle"];
 //   [view.layer removeAllAnimations];
 }
