@@ -11,6 +11,7 @@
 
 @interface ViewController5 ()
 @property(nonatomic,weak)UIView *view2;
+@property(nonatomic,weak)UIView *view3;
 @end
 
 @implementation ViewController5
@@ -62,17 +63,25 @@
 }
 
 -(void)aboutCategoryCreatedBySystem{
+   //添加观察者 会和weak修饰一样 程序运行时生成一个派生类 在其被观察属性的set方法中增加 - (void)willChangeValueForKey:(NSString *)key;- (void)didChangeValueForKey:(NSString *)key;方法，也可以手动调用方法出发KVO。
    UIView *view = [UIView new];
    [view addObserver:self forKeyPath:@"backgroundColor" options:NSKeyValueObservingOptionInitial context:nil];
    UIView *view1 = [UIView new];
-   NSLog(@"%@",[view class]);
-   NSLog(@"%@",object_getClass(view));
-   NSLog(@"%@",[view1 class]);
-   NSLog(@"%@",object_getClass(view1));
+   NSLog(@"1%@",[view class]);
+   NSLog(@"1%@",object_getClass(view));
+   NSLog(@"2%@",[view1 class]);
+   NSLog(@"2%@",object_getClass(view1));
    _view2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 90, 90)];
-   NSLog(@"%@",[_view2 class]);
-   NSLog(@"%@",object_getClass(_view2));
+   NSLog(@"3%@",[_view2 class]);
+   NSLog(@"3%@",object_getClass(_view2));
    [self.view addSubview:_view2];
+   UIView *viewtmp = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
+   [self.view2 addSubview:viewtmp];
+   _view3 = viewtmp;
+   NSLog(@"4%@",[_view3 class]);
+   NSLog(@"4%@",object_getClass(viewtmp));
+   viewtmp = nil;
+   NSLog(@"4%@",[_view3 class]);
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{

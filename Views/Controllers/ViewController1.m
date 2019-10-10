@@ -24,7 +24,7 @@
    [super viewDidLoad];
    self.view.backgroundColor = [UIColor blueColor];
    
-//    [self hanoi];
+    [self hanoi];
    NSLog(@"%ld",[self soldierRingWithHuanmCount:10 andKilledIndex:3]);
 }
 

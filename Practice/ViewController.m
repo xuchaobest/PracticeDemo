@@ -28,6 +28,11 @@
       [self.view addSubview:table];
    }
    [self performSelector:@selector(meserror) withObject:nil afterDelay:0];
+   
+   //打印方法名
+   
+   NSLog(@"方法名\n\n%s",__func__);
+   NSLog(@"方法名1\n\n%@",NSStringFromSelector(_cmd));
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -74,13 +79,13 @@
          return @"使用动态库";
          break;
       case 4:
-         return @"数学模型/算法";
+         return @"数学模型/算法&消息转发";
          break;
        case 5:
            return @"笔记";
            break;
       case 6:
-         return @"一个计时方法的demo";
+         return @"一个计时方法的demo  &&  viewcontroller生命周期的函数调用";
          break;
       default:
          return @"";

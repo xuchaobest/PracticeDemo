@@ -7,6 +7,7 @@
 //
 
 #import "ViewController6.h"
+#import <objc/runtime.h>
 
 @interface ViewController6 ()<UITextFieldDelegate>
 
@@ -25,6 +26,8 @@
 @property(nonatomic,assign)NSInteger runningIndex;
 
 @property(nonatomic,strong)CAKeyframeAnimation *ation;
+
+
 @end
 
 @implementation ViewController6
@@ -33,7 +36,8 @@ static CGFloat eachLenth;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   [self initWorks];
+//   [self initWorks];
+   
 }
 
 -(void)initWorks{
