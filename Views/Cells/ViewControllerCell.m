@@ -20,7 +20,7 @@ NSString *const cellReuseIdentifer = @"cell";
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
    if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
       if(!_topic) {
-         _topic = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, Width_Screen, 60)];
+         _topic = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 320, 60)];
          _topic.textColor = [UIColor darkTextColor];
          _topic.font = [UIFont systemFontOfSize:15];
          _topic.textAlignment = NSTextAlignmentCenter;

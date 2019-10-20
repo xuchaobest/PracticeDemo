@@ -11,6 +11,8 @@
 		1320F4EF22E894B500865F13 /* XUC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1320F4ED22E8941300865F13 /* XUC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1320F4F022E894B500865F13 /* XUC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1320F4ED22E8941300865F13 /* XUC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1320F4F422E894E500865F13 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 1320F4F322E894E500865F13 /* ViewController3.m */; };
+		1326164B235C2FDA008E646B /* ViewController0+VC0.m in Sources */ = {isa = PBXBuildFile; fileRef = 1326164A235C2FDA008E646B /* ViewController0+VC0.m */; };
+		1326164E235C3E02008E646B /* ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1326164D235C3E02008E646B /* ViewController7.swift */; };
 		132FB7292339970B00A19228 /* ViewController6.m in Sources */ = {isa = PBXBuildFile; fileRef = 132FB7272339970B00A19228 /* ViewController6.m */; };
 		132FB72A2339970B00A19228 /* ViewController6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132FB7282339970B00A19228 /* ViewController6.xib */; };
 		133598B622EC0D8100D509DF /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 133598B522EC0D8100D509DF /* ViewController4.m */; };
@@ -69,6 +71,10 @@
 		1320F4ED22E8941300865F13 /* XUC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XUC.framework; sourceTree = "<group>"; };
 		1320F4F222E894E500865F13 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
 		1320F4F322E894E500865F13 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		13261649235C2FDA008E646B /* ViewController0+VC0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController0+VC0.h"; sourceTree = "<group>"; };
+		1326164A235C2FDA008E646B /* ViewController0+VC0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController0+VC0.m"; sourceTree = "<group>"; };
+		1326164C235C3E02008E646B /* practice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "practice-Bridging-Header.h"; sourceTree = "<group>"; };
+		1326164D235C3E02008E646B /* ViewController7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController7.swift; sourceTree = "<group>"; };
 		132FB7262339970B00A19228 /* ViewController6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController6.h; sourceTree = "<group>"; };
 		132FB7272339970B00A19228 /* ViewController6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController6.m; sourceTree = "<group>"; };
 		132FB7282339970B00A19228 /* ViewController6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController6.xib; sourceTree = "<group>"; };
@@ -142,6 +148,8 @@
 			children = (
 				13E3BFF022E2C5E600D15F16 /* ViewController0.h */,
 				13E3BFF122E2C5E600D15F16 /* ViewController0.m */,
+				13261649235C2FDA008E646B /* ViewController0+VC0.h */,
+				1326164A235C2FDA008E646B /* ViewController0+VC0.m */,
 				13E7924422DE25B1003EEDDC /* ViewController1.h */,
 				13E7924522DE25B1003EEDDC /* ViewController1.m */,
 				13F930C022E42330008DA76D /* ViewController2.h */,
@@ -155,6 +163,8 @@
 				132FB7262339970B00A19228 /* ViewController6.h */,
 				132FB7272339970B00A19228 /* ViewController6.m */,
 				132FB7282339970B00A19228 /* ViewController6.xib */,
+				1326164D235C3E02008E646B /* ViewController7.swift */,
+				1326164C235C3E02008E646B /* practice-Bridging-Header.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -342,6 +352,7 @@
 					};
 					13BB1E3522A6CB8F00FE2CB7 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -417,11 +428,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1326164B235C2FDA008E646B /* ViewController0+VC0.m in Sources */,
 				13E3BFF622E31E5700D15F16 /* ViewControllerCell.m in Sources */,
 				13E7924622DE25B1003EEDDC /* ViewController1.m in Sources */,
 				1320F4F422E894E500865F13 /* ViewController3.m in Sources */,
 				132FB7292339970B00A19228 /* ViewController6.m in Sources */,
 				13BB1E3E22A6CB8F00FE2CB7 /* ViewController.m in Sources */,
+				1326164E235C3E02008E646B /* ViewController7.swift in Sources */,
 				13E3C00422E388B900D15F16 /* UIView+Layout.m in Sources */,
 				13BB1E4922A6CB9400FE2CB7 /* main.m in Sources */,
 				133598BD22EC155200D509DF /* VC4TableCell.m in Sources */,
@@ -472,6 +485,7 @@
 		1335990F22EC71D300D509DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBDJ83Z5HX;
@@ -491,6 +505,7 @@
 		1335991022EC71D300D509DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBDJ83Z5HX;
@@ -510,6 +525,7 @@
 		1335991D22EC721B00D509DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBDJ83Z5HX;
 				INFOPLIST_FILE = practiceUITests/Info.plist;
@@ -528,6 +544,7 @@
 		1335991E22EC721B00D509DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBDJ83Z5HX;
 				INFOPLIST_FILE = practiceUITests/Info.plist;
@@ -660,14 +677,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QBDJ83Z5HX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BasicFiles/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = practice/Info.plist;
@@ -679,6 +698,9 @@
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincentplus.www.practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Views/Controllers/practice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -688,14 +710,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QBDJ83Z5HX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BasicFiles/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = practice/Info.plist;
@@ -707,6 +731,8 @@
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincentplus.www.practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Views/Controllers/practice-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -8,6 +8,7 @@
 //
 #pragma mark - 动画demo
 #import "ViewController0.h"
+#import "ViewController0+VC0.h"
 
 @interface ViewController0 ()
 @property(nonatomic,strong)CAAnimationGroup *group;
@@ -21,6 +22,7 @@ extern NSString *const cellReuseIdentifer;
 - (void)viewDidLoad {
     [super viewDidLoad];
    [self startWithAnimation];
+   self.name = @"66";
    NSLog(@"%@",cellReuseIdentifer);
 }
 
@@ -57,7 +59,7 @@ extern NSString *const cellReuseIdentifer;
       });
    }];
    [task resume];
-
+//   [downloadQue setSuspended:YES];
    NSURLSession * imgDownloadSession1 = [NSURLSession sessionWithConfiguration:config delegate:(id)self delegateQueue:downloadQue];
    NSURLSessionDownloadTask *task1 = [[NSURLSessionDownloadTask alloc]init];
    task1 = [imgDownloadSession1 downloadTaskWithURL:[NSURL URLWithString:@"http://b-ssl.duitang.com/uploads/item/201608/21/20160821230024_MyCYK.thumb.700_0.jpeg"] completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -166,5 +168,7 @@ extern NSString *const cellReuseIdentifer;
 //   CAAnimationGroup *group = [view.layer animationForKey:@"shuffle"];
 //   [view.layer removeAllAnimations];
 }
+
+
 
 @end
