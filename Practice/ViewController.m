@@ -31,6 +31,7 @@ static NSInteger tmp = 1;
    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, Height_Nav+20, Width_Screen, Height_Screen-Height_Nav-20)];
    view.backgroundColor = [UIColor redColor];
    view.tag = 99;
+   view.opaque = YES;
    self.view = view;
 }
 

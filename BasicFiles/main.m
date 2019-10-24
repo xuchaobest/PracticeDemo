@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-
+extern CFAbsoluteTime startTime;
+extern NSString *name;
 int main(int argc, char * argv[]) {
    @autoreleasepool {
+      startTime = CFAbsoluteTimeGetCurrent();
+      name = @"wangyi";
        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
    }
 }

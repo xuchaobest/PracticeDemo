@@ -12,11 +12,17 @@
 @interface AppDelegate ()
 
 @end
-
+CFAbsoluteTime startTime;
+NSString *name;
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//   sleep(1);
+   dispatch_async(dispatch_get_main_queue(), ^{
+      NSLog(@"启动时间 %f",CFAbsoluteTimeGetCurrent()-startTime);
+      NSLog(@"name = %@",name);
+   });
    [UIView initDefineParameters];
    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
    UINavigationController *navi = [UINavigationController new];
