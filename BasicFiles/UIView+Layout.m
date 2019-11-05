@@ -7,99 +7,108 @@
 //
 
 #import "UIView+Layout.h"
+#import <objc/runtime.h>
 
 @implementation UIView (Layout)
 
 #pragma mark - implement set and get function of global parameters
 
--(void)setWidth:(CGFloat)width{
+- (void)setWidth:(CGFloat)width{
    CGRect frame = self.frame;
    frame.size.width = width;
    self.frame = frame;
 }
 
--(void)setHeight:(CGFloat)height{
+- (void)setHeight:(CGFloat)height{
    CGRect frame = self.frame;
    frame.size.height = height;
    self.frame = frame;
 }
 
--(void)setTop:(CGFloat)top{
+- (void)setTop:(CGFloat)top{
    CGRect frame = self.frame;
    frame.origin.y = top;
    self.frame = frame;
 }
 
--(void)setBottom:(CGFloat)bottom{
+- (void)setBottom:(CGFloat)bottom{
    CGRect frame = self.frame;
    frame.origin.y = bottom - frame.size.height;
    self.frame = frame;
 }
 
--(void)setLeft:(CGFloat)left{
+- (void)setLeft:(CGFloat)left{
    CGRect frame = self.frame;
    frame.origin.x = left;
    self.frame = frame;
 }
 
--(void)setRight:(CGFloat)right{
+- (void)setRight:(CGFloat)right{
    CGRect frame = self.frame;
    frame.origin.x = right - frame.size.width;
    self.frame = frame;
 }
 
--(void)setCenterx:(CGFloat)centerx{
+- (void)setCenterx:(CGFloat)centerx{
    CGRect frame = self.frame;
    frame.origin.x = centerx - frame.size.width/2;
    self.frame = frame;
 }
 
--(void)setCentery:(CGFloat)centery{
+- (void)setCentery:(CGFloat)centery{
    CGRect frame = self.frame;
    frame.origin.y = centery - frame.size.height/2;
    self.frame = frame;
 }
 
--(void)setSize:(CGSize)size{
+- (void)setSize:(CGSize)size{
    CGRect frame = self.frame;
    frame.size = size;
    self.frame = frame;
 }
 
--(CGFloat)width{
+- (void)setName:(NSString *)name{
+   objc_setAssociatedObject(self, @selector(name), name, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (CGFloat)width{
    return self.frame.size.width;
 }
 
--(CGFloat)height{
+- (CGFloat)height{
    return self.frame.size.height;
 }
 
--(CGFloat)left{
+- (CGFloat)left{
    return self.frame.origin.x;
 }
 
--(CGFloat)right{
+- (CGFloat)right{
    return self.frame.origin.x + self.frame.size.width;
 }
 
--(CGFloat)top{
+- (CGFloat)top{
    return self.frame.origin.y;
 }
 
--(CGFloat)bottom{
+- (CGFloat)bottom{
    return self.frame.origin.y + self.frame.size.height;
 }
 
--(CGFloat)centerx{
+- (CGFloat)centerx{
    return self.center.x;
 }
 
--(CGFloat)centery{
+- (CGFloat)centery{
    return self.center.y;
 }
 
--(CGSize)size{
+- (CGSize)size{
    return self.frame.size;
+}
+
+- (NSString *)name{
+   return objc_getAssociatedObject(self, @selector(name));
 }
 
 +(void)initDefineParameters{

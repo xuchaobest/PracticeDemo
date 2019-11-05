@@ -34,6 +34,7 @@ static CGFloat HBB;
 @property(nonatomic)CGFloat centerx;
 @property(nonatomic)CGFloat centery;
 @property(nonatomic)CGSize  size;
+@property(nonatomic,copy)NSString * name;
 
 +(void)initDefineParameters;
 +(CGFloat)getSW;

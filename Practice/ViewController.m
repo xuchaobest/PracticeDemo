@@ -10,6 +10,7 @@
 #import "ViewControllerCell.h"
 #import "practice-Swift.h"
 #import <objc/runtime.h>
+#import "NSObject+crashDefend.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -79,15 +80,12 @@ static NSInteger tmp = 1;
    tmp ++;
    NSLog(@"tmp %ld\n viewtag = %ld",tmp,self.view.tag);
 #if 1
-
-//   @autoreleasepool {
-      UITableView *table = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
-      table.delegate = self;
-      table.dataSource = self;
-      table.separatorStyle = UITableViewCellSeparatorStyleNone;
-      [table registerClass:ViewControllerCell.class forCellReuseIdentifier:cellReuseIdentifer];
-      [self.view addSubview:table];
-//   }
+   UITableView *table = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
+   table.delegate = self;
+   table.dataSource = self;
+   table.separatorStyle = UITableViewCellSeparatorStyleNone;
+   [table registerClass:ViewControllerCell.class forCellReuseIdentifier:cellReuseIdentifer];
+   [self.view addSubview:table];
    [self performSelector:@selector(meserror) withObject:nil afterDelay:0];
    
    //
@@ -115,7 +113,20 @@ static NSInteger tmp = 1;
    table.left = Width_Screen/2-160;
    NSLog(@"tablewidth = %f",table.width);
    table.backgroundColor = [UIColor orangeColor];
+   
+#pragma mark - 子线程 performselector  还是算了吧
+   if (0)
+      [self performSelector:@selector(judgeThread) withObject:nil afterDelay:3];
+   else{
+      dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+         [self performSelector:@selector(judgeThread) withObject:nil afterDelay:3];
+      });
+   }
 #endif
+}
+
+- (void)judgeThread{
+   NSLog(@"是否是在主线程 %d",[NSThread currentThread]==NSThread.mainThread);
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -205,6 +216,7 @@ static NSInteger tmp = 1;
    if (sel == @selector(meserror)) {
       Method newFunc = class_getInstanceMethod([self class], @selector(msgForwardInvocation));
       const char * desStr = method_getTypeEncoding(newFunc);
+      
       class_addMethod([self class], sel, (IMP)oneMethodIsInvalid, desStr);
       return YES;
    }
@@ -212,10 +224,10 @@ static NSInteger tmp = 1;
 }
 
 -(id)forwardingTargetForSelector:(SEL)aSelector{
-   /*if (aSelector == @selector(meserror)) {
-      ViewControllerCell *cell = [[ViewControllerCell alloc]init];
-      return cell;
-   }*/
+//   if (aSelector == @selector(meserror)) {
+//      ViewControllerCell *cell = [[ViewControllerCell alloc]init];
+//      return cell;
+//   }
    return  [super forwardingTargetForSelector:aSelector];
 }
 
@@ -236,6 +248,7 @@ static NSInteger tmp = 1;
    }
 }
 
+
 -(void)megLogOutIntoIMP:(NSString *)msgname{
    NSLog(@"消息转发:%@",msgname);
 }
@@ -244,8 +257,9 @@ static NSInteger tmp = 1;
    
 }
 
-void oneMethodIsInvalid(){
+int oneMethodIsInvalid(){
    NSLog(@"消息转发成功了");
+   return 2;
 }
 
 @end

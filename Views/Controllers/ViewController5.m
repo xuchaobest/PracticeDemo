@@ -18,10 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-   [self convertStringBetweenOCAndC];
-   [self aboutCategoryCreatedBySystem];
+//   [self convertStringBetweenOCAndC];
+//   [self aboutCategoryCreatedBySystem];
 }
+
+#pragma mark - oc和c字符转换和urlencode编码
 
 -(void)convertStringBetweenOCAndC{
     //先把oc转c，再转回oc（待研究）
@@ -62,6 +63,8 @@
     
 }
 
+#pragma mark - kvo的点和weak修饰
+
 -(void)aboutCategoryCreatedBySystem{
    //添加观察者 会和weak修饰一样 程序运行时生成一个派生类 在其被观察属性的set方法中增加 - (void)willChangeValueForKey:(NSString *)key;- (void)didChangeValueForKey:(NSString *)key;方法，也可以手动调用方法出发KVO。
    UIView *view = [UIView new];
@@ -87,6 +90,8 @@
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
    
 }
+
+
 
 -(void)dealloc{
    

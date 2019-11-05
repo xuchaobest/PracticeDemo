@@ -17,7 +17,6 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - ReactiveObjC (3.1.1)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -25,22 +24,19 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
   - FMDB (~> 2.7.5)
-  - ReactiveObjC (~> 3.1.1)
   - SDWebImage (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - FMDB
-    - ReactiveObjC
     - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 27fd3535151e59ddb4d262d88f4aa3aad7966a99
+PODFILE CHECKSUM: b68a2439b22cf96058368312e07bcb65c5eea7a0
 
 COCOAPODS: 1.6.1
