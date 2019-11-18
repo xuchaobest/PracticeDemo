@@ -112,6 +112,7 @@
 		13E3C00322E388B900D15F16 /* UIView+Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		13E7924422DE25B1003EEDDC /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		13E7924522DE25B1003EEDDC /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		13F3973E23827F73007F09F1 /* practiceDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = practiceDebug.entitlements; path = practice/practiceDebug.entitlements; sourceTree = "<group>"; };
 		13F71EFF236C1A28002AD162 /* NSObject+crashDefend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+crashDefend.h"; sourceTree = "<group>"; };
 		13F71F00236C1A28002AD162 /* NSObject+crashDefend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+crashDefend.m"; sourceTree = "<group>"; };
 		13F930C022E42330008DA76D /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 		13BB1E2D22A6CB8F00FE2CB7 = {
 			isa = PBXGroup;
 			children = (
+				13F3973E23827F73007F09F1 /* practiceDebug.entitlements */,
 				1320F4ED22E8941300865F13 /* XUC.framework */,
 				13E3BFEF22E2C57600D15F16 /* BasicFiles */,
 				13BB1E3822A6CB8F00FE2CB7 /* Practice */,
@@ -735,9 +737,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = practice/practiceDebug.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QBDJ83Z5HX;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -765,6 +768,7 @@
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincentplus.www.practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Views/Controllers/practice-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
