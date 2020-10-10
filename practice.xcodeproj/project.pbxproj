@@ -20,6 +20,7 @@
 		133598BE22EC155200D509DF /* VC4TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133598BC22EC155200D509DF /* VC4TableCell.xib */; };
 		1335990A22EC71D300D509DF /* practiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335990922EC71D300D509DF /* practiceTests.m */; };
 		1335991822EC721B00D509DF /* practiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335991722EC721B00D509DF /* practiceUITests.m */; };
+		13A6295623C7880100EAC9E1 /* pig.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 13A6295523C7880100EAC9E1 /* pig.jpeg */; };
 		13BB1E3B22A6CB8F00FE2CB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1E3A22A6CB8F00FE2CB7 /* AppDelegate.m */; };
 		13BB1E3E22A6CB8F00FE2CB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BB1E3D22A6CB8F00FE2CB7 /* ViewController.m */; };
 		13BB1E4122A6CB8F00FE2CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB1E3F22A6CB8F00FE2CB7 /* Main.storyboard */; };
@@ -91,6 +92,8 @@
 		1335991522EC721B00D509DF /* practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1335991722EC721B00D509DF /* practiceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = practiceUITests.m; sourceTree = "<group>"; };
 		1335991922EC721B00D509DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A6295423C7790A00EAC9E1 /* comment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = comment.json; sourceTree = "<group>"; };
+		13A6295523C7880100EAC9E1 /* pig.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pig.jpeg; sourceTree = "<group>"; };
 		13BB1E3622A6CB8F00FE2CB7 /* practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BB1E3922A6CB8F00FE2CB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13BB1E3A22A6CB8F00FE2CB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				13BB1E3A22A6CB8F00FE2CB7 /* AppDelegate.m */,
 				13BB1E3C22A6CB8F00FE2CB7 /* ViewController.h */,
 				13BB1E3D22A6CB8F00FE2CB7 /* ViewController.m */,
+				13A6295523C7880100EAC9E1 /* pig.jpeg */,
+				13A6295423C7790A00EAC9E1 /* comment.json */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 				13BB1E4622A6CB9400FE2CB7 /* LaunchScreen.storyboard in Resources */,
 				132FB72A2339970B00A19228 /* ViewController6.xib in Resources */,
 				9C2CEAAA22EEE7640096C8E0 /* Note.rtf in Resources */,
+				13A6295623C7880100EAC9E1 /* pig.jpeg in Resources */,
 				133598BE22EC155200D509DF /* VC4TableCell.xib in Resources */,
 				13BB1E4322A6CB9400FE2CB7 /* Assets.xcassets in Resources */,
 				13BB1E4122A6CB8F00FE2CB7 /* Main.storyboard in Resources */,

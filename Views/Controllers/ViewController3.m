@@ -41,6 +41,7 @@
    a = 50;
    NSLog(@"整形指针2 %d",*i);
    dd();
+   [self gcdGroupMethod];
 }
 
 - (id)valueForUndefinedKey:(NSString *)key{

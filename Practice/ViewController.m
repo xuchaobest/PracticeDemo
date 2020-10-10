@@ -79,50 +79,61 @@ static NSInteger tmp = 1;
    NSLog(@"方法名\n\n%s",__func__);
    tmp ++;
    NSLog(@"tmp %ld\n viewtag = %ld",tmp,self.view.tag);
-#if 1
-   UITableView *table = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
-   table.delegate = self;
-   table.dataSource = self;
-   table.separatorStyle = UITableViewCellSeparatorStyleNone;
-   [table registerClass:ViewControllerCell.class forCellReuseIdentifier:cellReuseIdentifer];
-   [self.view addSubview:table];
-   [self performSelector:@selector(meserror) withObject:nil afterDelay:0];
-   
-   //
-   NSArray * arr = @[@(1)];
-   NSLog(@"arr %p - %@\n",arr,arr.class);
-   NSMutableArray *arr1 = @[@(2)].mutableCopy;
-   _strArr = arr1;
-   _copArr = arr1;
-   arr1 = @[@(3)].mutableCopy;
-   NSArray *arr3 = arr.copy;
-   arr = @[@"5"];
-   
-//   NSLog(@"arr %p - %@\n arr1 %p - %@\n _strarr %p - %@\n _coparr %p - %@\n",arr,arr.class,arr1,arr1.class,_strArr,_strArr.class,_copArr,_copArr.class);
-   NSLog(@"arr %p - %@\n arr1 %p - %@\n ",arr,arr.class,arr3,arr3.class);
-   NSArray *tmp = @[@"6"];
-   arr = tmp;
-   NSLog(@"arr %p - %p\n",arr,tmp);
-   
-   int a = 1;
-   int * b;
-   b = &a;
-   NSLog(@"a %d b %p %d ",a,b,*b);
-   
-   table.width = 320;
-   table.left = Width_Screen/2-160;
-   NSLog(@"tablewidth = %f",table.width);
-   table.backgroundColor = [UIColor orangeColor];
-   
-#pragma mark - 子线程 performselector  还是算了吧
-   if (0)
-      [self performSelector:@selector(judgeThread) withObject:nil afterDelay:3];
-   else{
-      dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+   NSString *jsonString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"comment" ofType:@"json"] encoding:NSUTF8StringEncoding error:nil];
+   NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+   NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
+   NSLog(@"%@",dic);
+   UIImage *image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"pig" ofType:@"jpeg"]];
+//   UIImageView *img = [[UIImageView alloc]initWithFrame:CGRectMake(100, 200, 200, 200)];
+//   img.image = image;
+//   [self.view addSubview:img];
+}
+
+- (void)theBeginning{
+   #if 1
+      UITableView *table = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
+      table.delegate = self;
+      table.dataSource = self;
+      table.separatorStyle = UITableViewCellSeparatorStyleNone;
+      [table registerClass:ViewControllerCell.class forCellReuseIdentifier:cellReuseIdentifer];
+      [self.view addSubview:table];
+      [self performSelector:@selector(meserror) withObject:nil afterDelay:0];
+      
+      //
+      NSArray * arr = @[@(1)];
+      NSLog(@"arr %p - %@\n",arr,arr.class);
+      NSMutableArray *arr1 = @[@(2)].mutableCopy;
+      _strArr = arr1;
+      _copArr = arr1;
+      arr1 = @[@(3)].mutableCopy;
+      NSArray *arr3 = arr.copy;
+      arr = @[@"5"];
+      
+   //   NSLog(@"arr %p - %@\n arr1 %p - %@\n _strarr %p - %@\n _coparr %p - %@\n",arr,arr.class,arr1,arr1.class,_strArr,_strArr.class,_copArr,_copArr.class);
+      NSLog(@"arr %p - %@\n arr1 %p - %@\n ",arr,arr.class,arr3,arr3.class);
+      NSArray *tmp = @[@"6"];
+      arr = tmp;
+      NSLog(@"arr %p - %p\n",arr,tmp);
+      
+      int a = 1;
+      int * b;
+      b = &a;
+      NSLog(@"a %d b %p %d ",a,b,*b);
+      
+      table.width = 320;
+      table.left = Width_Screen/2-160;
+      NSLog(@"tablewidth = %f",table.width);
+      table.backgroundColor = [UIColor orangeColor];
+      
+   #pragma mark - 子线程 performselector  还是算了吧
+      if (0)
          [self performSelector:@selector(judgeThread) withObject:nil afterDelay:3];
-      });
-   }
-#endif
+      else{
+         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [self performSelector:@selector(judgeThread) withObject:nil afterDelay:3];
+         });
+      }
+   #endif
 }
 
 - (void)judgeThread{
